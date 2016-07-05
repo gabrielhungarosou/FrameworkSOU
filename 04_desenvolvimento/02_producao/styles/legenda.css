@@ -1,0 +1,70 @@
+/*-------------------------------LEGENDA*/
+#subtitle{
+	cursor: default; position: absolute;
+	width: 90%; 
+	margin-left: 4%;
+	padding: 8px;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: none;
+
+	font-size: 16px; text-align: center; color: #000000;
+
+	border-radius: 5px;
+
+	z-index: 2;
+
+	-webkit-box-shadow: 0px 0px 2px 0px #000000;
+	-moz-box-shadow: 0px 0px 2px 0px #000000;
+	box-shadow: 0px 0px 2px 0px #000000;
+}
+/*------------------------------------*/
+
+/*-----------------BOTÃO PAUSE LOCUÇÃO*/
+#pauseButton{
+	position: absolute;
+	cursor: pointer;
+	width: 53px; height: 51px;
+	top: 660px;
+	margin-top: -51px;
+	background-image: url(img/button.png);
+	display: none;
+	z-index: 3;
+}
+#pauseIcon{
+	position: relative;
+	width: 22px; height: 25px;
+	margin-left: 10px;
+	margin-top: 18px;
+}
+.pauseButtonIcon{ background-image: url(img/pause.png); }
+.playButtonIcon{ background-image: url(img/play.png); }
+
+/*------------------------------------*/
+
+/*------------------BOLAS DE NAVEGAÇÃO*/
+
+.navBall{
+	position: relative;
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin-left: 6px;
+	margin-right: 6px;
+
+	background-color: rgba(255, 255, 255, 0.1);
+
+	border-style: solid;
+	border-color: #8c8c8c;
+	border-width: 1px;
+	border-radius: 50%;
+}
+#pageNavigation{
+	position: absolute;
+	height: 16px;
+	top: 638px;
+	width: 130px;
+	margin-left: -65px;
+	left: 50%;
+}
+
+/*------------------------------------*/

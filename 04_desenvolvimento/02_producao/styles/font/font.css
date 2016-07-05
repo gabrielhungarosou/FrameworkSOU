@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'default_font';
+    src: url('font/default_font.eot');
+    src: url('font/default_font.eot?#iefix') format('embedded-opentype'),
+         url('font/default_font.woff') format('woff'),
+         url('font/default_font.ttf') format('truetype'),
+         url('font/default_font.svg#course_default') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- saved from url=(0014)about:internet -->
+<!--<meta http-equiv="expires" content="Mon, 06 Jan 2090 00:00:01 GMT" />-->
+<meta 	http-equiv="Cache-Control" 	content="public"/>
+<meta 	http-equiv="Content-Type" 	content="text/html; charset=utf-8">
+
+<link 	href="styles/legenda.css"	rel="stylesheet" type="text/css">
+<link 	href="styles/menu.css"		rel="stylesheet" type="text/css">
+<link 	href="styles/player.css"	rel="stylesheet" type="text/css">
+<link 	href="styles/font/font.css" rel="stylesheet" type="text/css">
+
+<script src="js/lib/hammer-mobile.js"		language="javascript"></script>
+<script src="js/lib/jquery-1.12.3.min.js"	language="javascript"></script>
+
+<script src="xml/course_structure.js"		language="javascript"></script>
+<script src="xml/course_subtitles.js"		language="javascript"></script>
+
+<script src="js/fun/Player.js" 				language="javascript"></script>
+<script src="js/fun/Lms.js" 	 			language="javascript"></script>
+<script src="js/fun/Subtitle.js" 			language="javascript"></script>
+<script src="js/fun/Tracks.js" 				language="javascript"></script>
+<script src="js/fun/Menu.js" 				language="javascript"></script>
+<script src="Main.js" 						language="javascript"></script>
+
+<style type="text/css">
+body {
+	margin: 0px; 	
+	background-image: url(styles/img/bg.png); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 		
+	-moz-user-select: -moz-none; 		
+	-khtml-user-select: none;
+    -webkit-user-select: none; 	    
+    -ms-user-select: none; 	    
+    user-select: none; 
+    font-family: 'default_font', Arial, Calibri, Verdana, Geneva, sans-serif; 
+}
+</style>
+</head>
+<body onLoad="Main.courseLoaded();">
+
+	<!--Trilha Sonora-->
+	<audio id="soundFX" onLoadedData="Tracks.playFX();" onEnded="Tracks.checkLoop();"></audio>
+
+	<!--Locução-->
+	<audio id="locution" onLoadstart="" onLoadedData="Subtitle.startLocution();" onEnded="Subtitle.locutionEnd();"></audio>
+
+	<!--Player-->
+	<div id="player">
+
+		<!--Topo-->
+		<div id="top">
+			<div id="courseName" title="Título do treinamento."></div>
+			<div id="pageName" title="Localização no treinamento e o assunto que esta sendo abordado."></div>
+			<div id="menuButton" title="Menu do treinamento."></div>
+		</div>
+
+		<!--Navegação-->
+		<div id="prevPage" class="navigationClass" title="Rever o conteúdo."></div>
+		<div id="nextPage" class="navigationClass" title="Avançar no conteúdo."></div>
+
+		<!--Play/pause-->
+		<div id="pauseButton" title="Pausar/continuar áudio."><div id="pauseIcon" class="pauseButtonIcon"></div></div>
+
+		<!--Legenda-->
+		<div id="subtitle"></div>
+
+		<!--Menu do player-->
+		<div id="courseMenu">
+			<div id="menuBackground"></div>
+			<div id="menuBackgroundOpacity"></div>
+
+			<div id="menuOpacity"></div>
+
+			<div id="spacer" style="position: relative; width: 341px;"></div>
+
+			<div id="optionsMenu">		
+				<div id="subtitleButton" class="buttonClass" title="Habilitar/desabilitar legenda."><img src="styles\img\menu\subtitle.png"><img><div class="menuButtonText">Legenda</div></div>
+				<div id="audioButton" class="buttonClass" title="Habilitar/desabilitar áudio."><img id="audioImg" src="styles\img\menu\audio.png"><img><div class="menuButtonText">Áudio</div></div>
+				<div id="helpButton" class="buttonClass" title="Aprenda como navegar pelo treinamento."><img src="styles\img\menu\help.png"><img><div class="menuButtonText">Ajuda</div></div>
+				<div id="quitButton" class="buttonClass" title="Sair do treinamento."><img src="styles\img\menu\quit.png"><img><div class="menuButtonText" style="margin-top:-14px;">Sair do Treinam.</div></div>
+			</div>
+
+			<div id="extraButtons">
+
+			</div>
+
+			<div id="navMenu">
+				<div id="navMenuTitle">Menu de navegação</div>
+				<div id="navOptions"></div>
+			</div>
+		</div>
+
+		<!--IFrame do player-->
+		<iframe id="pageFrame" src="" frameborder="0" scrolling="no"></iframe>
+
+		<!--IFrame do pop ups-->
+		<iframe id="popFrames" src="" frameborder="0" scrolling="no"></iframe>
+
+
+		<!--Loader-->
+		<div id="pageLoader"><div id="pageLoaderIcon"></div></div>
+
+		<!--Abertura do curso-->
+		<div id="aberturaDiv">
+			<iframe id="introFrame" src="_pages/_abertura.html" frameborder="0" scrolling="no"></iframe>
+			<div id="aberturaClick"></div>
+		</div>
+
+		<!--Tracker de navegação das páginas-->
+		<div id="pageNavigation"></div>
+
+		<!--Area touch-->
+		<div id="touchDiv"></div>
+	</div>
+</body>
+</html>

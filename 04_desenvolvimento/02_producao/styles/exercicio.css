@@ -1,0 +1,187 @@
+/*-------------------------------EXERC*/
+#exeBackground{
+	position: absolute;
+	width: 1024px;
+	height: 660px;
+	background-image: url(../styles/img/exe/exe_background.png);
+	background-repeat: no-repeat;
+}
+#contentBox{
+	position: relative;
+	width: 800px;
+	height: auto;
+
+	background-color: rgba(255, 255, 255, 0.9);
+
+	border-radius: 2px;
+
+	left: 50%;
+	top: 50%;
+
+	margin-left: -423px;
+
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #808080;
+
+	padding: 22px;
+
+	-webkit-box-shadow: 1px 1px 2px 0px #444444;
+	-moz-box-shadow: 1px 1px 2px 0px #444444;
+	box-shadow: 1px 1px 2px 0px #444444;
+}
+#exeResult, #exeIntro{
+	cursor: default;
+}
+#exeEnun{
+	font-size: 18px;
+	margin-bottom: 20px;
+	cursor: default;
+}
+#exeChoices{
+	position: relative;
+	width: 800px;
+	cursor: default;
+}
+
+.exeChoice{
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+
+#exeInit{
+	position: relative;
+	width: 120px;
+	height: 44px;
+	left: 680px;
+
+	font-size: 20px;
+	text-align: center;
+
+	background-image: url(img/exe/exe_init.png);
+	cursor: default;
+}
+
+#exeConfirm{
+	float: right;
+	position: relative;
+	width: 120px;
+	height: 44px;
+	opacity: 0.3;
+
+	font-size: 20px;
+	text-align: center;
+
+	background-image: url(img/exe/exe_confirm.png);
+	cursor: default;
+	display: none;
+}
+
+#exeNext{
+	position: relative;
+	width: 120px;
+	height: 44px;
+	left: 550px;
+	opacity: 0.3;
+
+	font-size: 20px;
+	text-align: center;
+
+	background-image: url(img/exe/exe_next.png);
+	cursor: default;
+	display: none;
+}
+
+#exeReview{
+	float: right;
+	position: relative;
+	width: 120px;
+	height: 44px;
+
+	margin-right: 10px;
+
+	font-size: 20px;
+	text-align: center;
+
+	background-image: url(img/exe/exe_review.png);
+	cursor: pointer;
+	display: none;
+}
+
+#exeCourseReview{
+	position: relative;
+	width: 120px;
+	height: 44px;
+	left: 420px;
+
+	font-size: 20px;
+	text-align: center;
+
+	background-image: url(img/exe/exe_course_review.png);
+	cursor: pointer;
+	display: none;
+}
+
+#exeFeedback{
+	display: none;
+}
+#exeFeedbackBackground{
+	position: absolute;
+	width: 1024px;
+	height: 660px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#contentFeedbackBox{
+	position: relative;
+	width: 360px;
+	height: auto;
+
+	background-color: rgba(255, 255, 255, 1);
+
+	border-radius: 2px;
+
+	left: 50%;
+	top: 50%;
+
+	margin-left: -203px;
+	margin-top: -100px;
+
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #808080;
+
+	padding: 22px;
+	cursor: pointer;
+}
+#closeFeedback{
+	position: relative;
+	font-size: 22px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	width: auto;
+}
+#exeFeedbackX{
+	position: relative;
+	float: right;
+}
+
+#BtClearChoices{
+	position: relative;
+	float: left;
+	font-size: 14px;
+	cursor: pointer;
+	color: #333333;
+	display: none;
+}
+
+#exeImgContent{
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;	
+	display: none;
+	width: 800px;
+	height: 160px;
+	margin-bottom: 20px;
+}

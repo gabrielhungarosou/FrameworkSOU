@@ -9,7 +9,13 @@ dist/*
 report/*
 out/*
 target/*
-_pages/*
+04_desenvolvimento/02_producao/_pages/*
+04_desenvolvimento/02_producao/extras/*
+04_desenvolvimento/02_producao/files/*
+04_desenvolvimento/02_producao/loc/*
+04_desenvolvimento/02_producao/music/*
+04_desenvolvimento/02_producao/xml/*
+
 
 .idea/dictionaries/*
 .idea/uiDesigner.xml
@@ -21,6 +27,7 @@ _pages/*
 .flexLibProperties
 .FlexUnitSettings
 .project
+*.mp3
 
 Icon
 Thumbs.db

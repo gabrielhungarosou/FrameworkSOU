@@ -1,0 +1,23 @@
+Aqui você encontra o FRAMEWORK sempre atualizado após a nota de lançamento de uma nova versão!
+O ideal é que ao começar um projeto, você atualize os arquivos do seu FRAMEWORK para a versão dessa pasta!
+
+ATENÇÃO: COPIE AS PASTAS DAQUI E COLE NO ROOT DA PASTA DO SEU NOVO PROJETO PARA FUNCIONAMENTO DO '.BAT' QUE GERA O PACOTE SCORM.
+
+VERSÃO ATUAL: -----------------------------------------------------------------------------
+
+versão 0.1
+ 
+• Primeira versão do Framework. Conta com todas as funcionalidades do player padrão SOU, 
+mas se comunica diretamente com as exportações do ANIMATE CC; 
+
+• Utiliza JS, HTML, CSS, MP3, PNG;
+
+• Principais diferenças:
+	- Apenas dois botões navegam pelas telas e pelo contêudo;
+	- O botão voltar volta para a última cena apresentada (uso de checkpoints);
+	- Mudança na aplicação da Direção de Arte;
+
+
+VERSÃO ANTERIORES: -----------------------------------------------------------------------------
+
+x

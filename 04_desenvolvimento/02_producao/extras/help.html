@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- saved from url=(0014)about:internet -->
+<!--<meta http-equiv="expires" content="Mon, 06 Jan 2090 00:00:01 GMT" />-->
+<meta 	http-equiv="Cache-Control" 	content="public"/>
+<meta 	http-equiv="Content-Type" 	content="text/html; charset=utf-8">
+
+<link 	href="ajuda.css" rel="stylesheet" type="text/css">
+<link 	href="../styles/font/font.css" rel="stylesheet" type="text/css">
+
+<script src="Help.js"	language="javascript"></script>
+<script src="../js/lib/jquery-1.12.3.min.js"	language="javascript"></script>
+
+<style type="text/css">
+body {
+	margin: 0px; 	
+    font-family: 'default_font', Arial, Calibri, Verdana, Geneva, sans-serif; 
+}
+</style>
+</head>
+
+<body onLoad="Help.init();">
+	<div id="help">
+		<div id="background"></div>
+		<div id="box">
+			<div id="content">
+				<div id="title">Como navegar pelo curso?</div>
+				<div id="explain"></div>
+			</div>
+			<div id="balls">
+				<div id="prevArrow" class="arrowBall" onClick="Help.writeTip('goBack')">
+					<div class="arrow"></div>
+				</div>
+				<div id="0_help" class="ballOffHelp"></div>
+				<div id="1_help" class="ballOffHelp"></div>
+				<div id="2_help" class="ballOffHelp"></div>
+				<div id="3_help" class="ballOffHelp"></div>
+				<div id="4_help" class="ballOffHelp"></div>
+				<div id="nextArrow" class="arrowBall" onClick="Help.writeTip('goOn')">
+					<div class="arrow"></div>
+				</div>
+			</div>
+		</div>
+		<div id="quitHelp"><div id="xButton">X</div></div>
+	</div>
+</body>
+</html>

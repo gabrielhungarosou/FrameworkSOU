@@ -2,7 +2,7 @@ Aqui você encontra o FRAMEWORK sempre atualizado após a nota de lançamento de um
 O ideal é que ao começar um projeto, você atualize os arquivos do seu FRAMEWORK para a versão dessa pasta!
 
 ATENÇÃO: COPIE AS PASTAS DAQUI E COLE NO ROOT DA PASTA DO SEU NOVO PROJETO PARA FUNCIONAMENTO DO '.BAT' QUE GERA O PACOTE SCORM.
-Link para download da framewokr direto do Git:
+Link para download da framewokr direto do Git:  
 https://github.com/gabrielhungarosou/FrameworkSOU.git
 
 VERSÃO ATUAL: -----------------------------------------------------------------------------
